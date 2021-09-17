@@ -44,7 +44,7 @@ def get_user_content(uid):
                                 path = str(i) + '-' + str(j) + '-' + str(n)
                                 img_url = url.get('large').get('url')
                                 print('第' + str(n) + '张', end='')
-                                with open("C:\zhangzifeng\/" + path + img_url[-4:], 'wb') as f:
+                                with open("/Users/chenchen/Desktop/me/python/static/" + path + img_url[-4:], 'wb') as f:
                                     f.write(requests.get(url.get('large').get('url')).content)
                                 print('...OK!')
                                 n = n + 1
